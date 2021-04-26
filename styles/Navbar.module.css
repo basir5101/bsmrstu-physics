@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: black;
+}
+.logo p {
+  font-weight: bold;
+  font-size: 20px;
+  color: orange;
+}
+.logo p span {
+  color: white;
+  animation: logoAnimation 4s infinite alternate-reverse linear;
+}
+.menu {
+  align-items: center;
+}
+.menu ul {
+  display: inline-block;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  color: white;
+  font-weight: 500;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: 0.4s;
+  background-color: darkviolet;
+  border-radius: 0px 8px 8px 0px;
+  border-left: 5px solid darkslategray;
+}
+.menu ul li a:hover {
+  background-color: darkslategray;
+  color: white;
+}
+
+@media (max-width: 888px) {
+  .menu ul {
+    display: inline-block;
+    margin: 15px 0px;
+  }
+}
+
+@keyframes logoAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
