@@ -1,3 +1,7 @@
 .main {
   background-color: black;
 }
+.particles {
+  position: fixed;
+  z-index: -1;
+}
